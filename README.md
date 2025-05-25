@@ -72,5 +72,5 @@ Bu web sitesi, bir kafe/restoran için modern, duyarlı (responsive) bir web pla
 - Hızlı yükleme süreleri
 - SEO dostu yapı
 
-## Proje Durumu
-Aktif geliştirme aşamasında 
+## Canlı Demo
+[link](https://sultan-papagani.github.io/Cafe-Delight/)
