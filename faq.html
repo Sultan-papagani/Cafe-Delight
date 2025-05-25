@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Café Delight</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0,0,0,.125);
+        }
+        .category-title {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar kısmı-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Café Delight</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Menü</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="faq.html">SSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!--sıkça sorulan sorular kısmı-->
+    <header class="bg-light text-center py-5 mt-5">
+        <div class="container">
+            <h1 class="display-4">Sıkça Sorulan Sorular</h1>
+            <p class="lead">Hizmetlerimizle ilgili sıkça sorulan soruların cevaplarını burada bulabilirsiniz</p>
+        </div>
+    </header>
+
+    
+    <section class="py-5">
+        <div class="container">
+            <div class="faq-section">
+                
+                <h2 class="category-title">Rezervasyonlar</h2>
+                <div class="accordion mb-5" id="reservationFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#reservation1">
+                                Nasıl rezervasyon yapabilirim?
+                            </button>
+                        </h2>
+                        <div id="reservation1" class="accordion-collapse collapse show" data-bs-parent="#reservationFAQ">
+                            <div class="accordion-body">
+                                Bizi (555) 123-4568 numaralı telefondan arayarak, online rezervasyon sistemimizi kullanarak veya restoranımızı ziyaret ederek rezervasyon yapabilirsiniz. Hafta sonları ve özel günler için en az 24 saat önceden rezervasyon yapmanızı öneririz.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reservation2">
+                                İptal politikası nedir?
+                            </button>
+                        </h2>
+                        <div id="reservation2" class="accordion-collapse collapse" data-bs-parent="#reservationFAQ">
+                            <div class="accordion-body">
+                                İptaller için en az 4 saat önceden haber vermenizi rica ederiz. 6 veya daha fazla kişilik gruplar için 24 saat önceden bildirim gerekmektedir. Bu süreler içinde iptal edilmeyen rezervasyonlar için iptal ücreti uygulanabilir.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <h2 class="category-title">Menü & Diyet Gereksinimleri</h2>
+                <div class="accordion mb-5" id="menuFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1">
+                                Diyet kısıtlamalarına uygun menünüz var mı?
+                            </button>
+                        </h2>
+                        <div id="menu1" class="accordion-collapse collapse" data-bs-parent="#menuFAQ">
+                            <div class="accordion-body">
+                                Evet, vejetaryen, vegan, glutensiz ve diğer diyet gereksinimleri için çeşitli seçenekler sunuyoruz. Sipariş verirken lütfen alerjileriniz veya özel diyet gereksinimleriniz hakkında personelimizi bilgilendirin.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu2">
+                                Menünüz ne sıklıkla değişiyor?
+                            </button>
+                        </h2>
+                        <div id="menu2" class="accordion-collapse collapse" data-bs-parent="#menuFAQ">
+                            <div class="accordion-body">
+                                Ana menümüz yıl boyunca mevcuttur, ancak mevsimsel spesiyallerimiz üç ayda bir değişmektedir. Ayrıca, günlük olarak taze malzemelerle hazırlanan şefin özel yemekleri de sunulmaktadır.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <h2 class="category-title">Etkinlikler & Catering</h2>
+                <div class="accordion mb-5" id="eventsFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#events1">
+                                Özel etkinlikler düzenliyor musunuz?
+                            </button>
+                        </h2>
+                        <div id="events1" class="accordion-collapse collapse" data-bs-parent="#eventsFAQ">
+                            <div class="accordion-body">
+                                Evet, özel etkinlikler için kullanılabilen özel bir yemek odamız bulunmaktadır. 40 kişiye kadar grupları ağırlayabilir ve etkinliğinize özel menüler sunabiliriz.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#events2">
+                                Hangi catering hizmetlerini sunuyorsunuz?
+                            </button>
+                        </h2>
+                        <div id="events2" class="accordion-collapse collapse" data-bs-parent="#eventsFAQ">
+                            <div class="accordion-body">
+                                Kurumsal ve özel etkinlikler için tam kapsamlı catering hizmeti sunuyoruz. Catering menümüz tercihinize ve bütçenize göre özelleştirilebilir. Personel, ekipman ve kurulum/temizlik hizmetleri de sağlıyoruz.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <h2 class="category-title">Genel Bilgiler</h2>
+                <div class="accordion mb-5" id="generalFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general1">
+                                Otoparkınız var mı?
+                            </button>
+                        </h2>
+                        <div id="general1" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                            <div class="accordion-body">
+                                Evet, misafirlerimiz için ücretsiz vale otopark hizmetimiz vardır. Ayrıca, yürüme mesafesinde cadde otoparkı ve halka açık otopark da mevcuttur.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general2">
+                                Kıyafet zorunluluğunuz var mı?
+                            </button>
+                        </h2>
+                        <div id="general2" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                            <div class="accordion-body">
+                                Akıllı rahat (smart casual) bir kıyafet zorunluluğumuz vardır. Misafirlerimizin rahat olmasını isteriz, ancak plaj kıyafetleri, spor kıyafetleri veya aşırı günlük kıyafetler giymemelerini rica ederiz.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!--footer kısmı-->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Bize Ulaşın</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Kılavuzlar Mahallesi 413. Sokak No: 10 Karabük Üniversitesi Merkez Kampüsü<br>
+                        <i class="fas fa-phone"></i> (555) 123-4567<br>
+                        <i class="fas fa-envelope"></i> info@cafedelight.com
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Açılış Saatleri</h5>
+                    <p>
+                        Pazartesi - Cuma: 09:00 - 22:00<br>
+                        Cumartesi - Pazar: 10:00 - 23:00
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Bizi Takip Edin</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Café Delight. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html> 

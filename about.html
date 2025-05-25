@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda - Café Delight</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+    .timeline {
+        position: relative;
+        margin: 0 auto;
+        padding: 2rem 0;
+        max-width: 700px;
+    }
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: #0d6efd;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+    .timeline-event {
+        position: relative;
+        width: 50%;
+        padding: 1.5rem 2rem;
+        box-sizing: border-box;
+    }
+    .timeline-event.left {
+        left: 0;
+        text-align: right;
+    }
+    .timeline-event.right {
+        left: 50%;
+        text-align: left;
+    }
+    .timeline-event .timeline-dot {
+        position: absolute;
+        top: 1.5rem;
+        width: 24px;
+        height: 24px;
+        background: #fff;
+        border: 4px solid #0d6efd;
+        border-radius: 50%;
+        z-index: 2;
+    }
+    .timeline-event.left .timeline-dot {
+        right: -12px;
+    }
+    .timeline-event.right .timeline-dot {
+        left: -12px;
+    }
+    .timeline-event .timeline-content {
+        background: #fff;
+        border-radius: 8px;
+        padding: 1rem 1.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        display: inline-block;
+        min-width: 220px;
+        max-width: 320px;
+    }
+    .timeline-event .timeline-year {
+        font-weight: bold;
+        color: #0d6efd;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+    @media (max-width: 767px) {
+        .timeline::before { left: 8px; }
+        .timeline-event {
+            width: 100%;
+            left: 0 !important;
+            text-align: left !important;
+            padding-left: 2.5rem;
+            padding-right: 0;
+            margin-bottom: 2rem;
+        }
+        .timeline-event .timeline-dot {
+            left: -12px !important;
+            right: auto !important;
+        }
+    }
+    </style>
+</head>
+<body>
+   <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Café Delight</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Menü</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">SSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <header class="bg-light text-center py-5 mt-5">
+        <div class="container">
+            <h1 class="display-4">Café Delight Hakkında</h1>
+            <p class="lead">Hikayemizi, vizyonumuzu ve bizi motive eden tutkuyu keşfedin</p>
+        </div>
+    </header>
+
+   
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title mb-4">Vizyonumuz</h2>
+                            <p class="card-text">
+                                Yemek tutkunları için bir numaralı buluşma noktası olmak, mutfak mükemmelliğini sıcak misafirperverlikle birleştiren eşsiz bir yemek deneyimi sunmak. Harika yemekler ve üstün hizmet sevgisiyle insanları bir araya getiren unutulmaz anlar yaratmayı hedefliyoruz.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title mb-4">Misyonumuz</h2>
+                            <p class="card-text">
+                                Olağanüstü mutfak deneyimleri sunmak için:
+                                <ul>
+                                    <li>En kaliteli, yerel malzemeleri kullanmak</li>
+                                    <li>Hizmette en yüksek standartları korumak</li>
+                                    <li>Tüm misafirler için davetkar bir ortam yaratmak</li>
+                                    <li>Yerel topluluğumuzu desteklemek</li>
+                                    <li>Geleneklere saygı göstererek yenilikçi olmak</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Yolculuğumuz</h2>
+            <div class="timeline">
+                <div class="timeline-event left">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <div>Catering hizmetlerimizi genişlettik ve imza kahve karışımımızı piyasaya sürdük.</div>
+                    </div>
+                </div>
+                <div class="timeline-event right">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <div>İkinci şubemizi açtık ve ödüllü tatlı menümüzü sunduk.</div>
+                    </div>
+                </div>
+                <div class="timeline-event left">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <div>"En İyi Yeni Restoran" ödülünü aldık ve mevsimsel menü konseptimizi başlattık.</div>
+                    </div>
+                </div>
+                <div class="timeline-event right">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022</div>
+                        <div>Café Delight, olağanüstü yemek deneyimleri yaratma vizyonuyla kuruldu.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!--özgün ve kalabalık ekibimiz-->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Ekibimizle Tanışın</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <img src="images/chef.jpg" class="card-img-top" alt="Executive Chef">
+                        <div class="card-body">
+                            <h5 class="card-title">Berkay Efe</h5>
+                            <p class="card-text">Baş Aşçı</p>
+                            <a href="https://www.linkedin.com/in/berkay-efe-%C3%B6zben-428583324/" class="btn btn-outline-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <img src="images/manager.png" class="card-img-top" alt="Restaurant Manager">
+                        <div class="card-body">
+                            <h5 class="card-title">Berkay Efe</h5>
+                            <p class="card-text">Restoran Müdürü</p>
+                            <a href="https://www.linkedin.com/in/berkay-efe-%C3%B6zben-428583324/" class="btn btn-outline-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <img src="images/pastry_chef.png" class="card-img-top" alt="Pastry Chef">
+                        <div class="card-body">
+                            <h5 class="card-title">Berkay Efe</h5>
+                            <p class="card-text">Pastane Şefi</p>
+                            <a href="https://www.linkedin.com/in/berkay-efe-%C3%B6zben-428583324/" class="btn btn-outline-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!--footer-->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Bize Ulaşın</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Kılavuzlar Mahallesi 413. Sokak No: 10 Karabük Üniversitesi Merkez Kampüsü<br>
+                        <i class="fas fa-phone"></i> (555) 123-4567<br>
+                        <i class="fas fa-envelope"></i> info@cafedelight.com
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Açılış Saatleri</h5>
+                    <p>
+                        Pazartesi - Cuma: 09:00 - 22:00<br>
+                        Cumartesi - Pazar: 10:00 - 23:00
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Bizi Takip Edin</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Café Delight. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html> 

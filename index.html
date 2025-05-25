@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Delight - Welcome to Our Restaurant</title>
+
+   <!--bootstrap cdnleri importla-->
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+   <!--navbar kısmı-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Café Delight</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Menü</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">SSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!--carousel kısmı-->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/cileklikek.jpg" class="d-block w-100" alt="Café Interior">
+                <div class="carousel-caption">
+                    <h2>Café Delight'a Hoş Geldiniz</h2>
+                    <p>Mükemmel lezzet ve ambiyansın buluşma noktası</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/brown_cake.webp" class="d-block w-100" alt="Special Dishes">
+                <div class="carousel-caption">
+                    <h2>Seçkin Mutfağımız</h2>
+                    <p>Şefimizin özel lezzetlerini keşfedin</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/redvelvet2.jpg" class="d-block w-100" alt="Coffee Art">
+                <div class="carousel-caption">
+                    <h2>Sanatsal Kahveler</h2>
+                    <p>Güne özel kahve seçeneklerimizle başlayın</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+   <!--hoş geldiniz kısmı-->
+    <section class="welcome-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-4">Café Delight'a Hoş Geldiniz</h2>
+                    <p class="lead mb-4">Her lezzetin bir hikayesi, her anın bir hatırası var.</p>
+                    <hr class="my-4">
+                    <p>Geleneksel tarifler ile modern mutfağın mükemmel uyumunu sıcak bir atmosferde yaşayın.</p>
+                    <a class="btn btn-primary btn-lg" href="about.html" role="button">Daha Fazla Bilgi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Hizmetlerimiz</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/aksam_yemegi.jpg" class="card-img-top" alt="Fine Dining">
+                        <div class="card-body">
+                            <h5 class="card-title">Şık Akşam Yemeği</h5>
+                            <p class="card-text">Şık bir atmosferde seçkin lezzetlerimizi deneyimleyin.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Daha Fazla Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/catering.webp" class="card-img-top" alt="Catering">
+                        <div class="card-body">
+                            <h5 class="card-title">Catering Hizmetleri</h5>
+                            <p class="card-text">Özel etkinliklerinize şıklık katmak için buradayız.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Daha Fazla Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/birthday.png" class="card-img-top" alt="Private Events">
+                        <div class="card-body">
+                            <h5 class="card-title">Özel Etkinlikler</h5>
+                            <p class="card-text">Özel günlerinizi şık mekanımızda kutlayın.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Daha Fazla Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!--footer ve son-->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Bize Ulaşın</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Kılavuzlar Mahallesi 413. Sokak No: 10 Karabük Üniversitesi Merkez Kampüsü<br>
+                        <i class="fas fa-phone"></i> (555) 123-4567<br>
+                        <i class="fas fa-envelope"></i> info@cafedelight.com
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Açılış Saatleri</h5>
+                    <p>
+                        Pazartesi - Cuma: 09:00 - 22:00<br>
+                        Cumartesi - Pazar: 10:00 - 23:00
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Bizi Takip Edin</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Café Delight. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <!--bootstrap ve illede istediği popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html> 

@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e67e22;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.carousel {
+    margin-top: 56px;
+}
+
+.carousel-item {
+    height: 80vh;
+    min-height: 400px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.welcome-section {
+    padding: 80px 0;
+}
+
+.welcome-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.btn-outline-primary {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+}
+
+footer {
+    background-color: var(--dark-color);
+}
+
+.social-links a {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color) !important;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 50vh;
+    }
+
+    .welcome-section {
+        padding: 40px 0;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bg-light {
+    background-color: var(--light-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
